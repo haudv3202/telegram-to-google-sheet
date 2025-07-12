@@ -16,8 +16,11 @@ const RESULT_COL = 2; // Cột B, kết quả
 const PORT = 3000;
 
 async function main() {
-  const raw = await readFile('credentials.json', 'utf-8');
-  const credentials = JSON.parse(raw);
+  // const raw = await readFile('credentials.json', 'utf-8');
+  // const credentials = JSON.parse(raw);
+
+  const credentials = JSON.parse(process.env.GOOGLE_CREDENTIALS);
+
 
   const auth = new GoogleAuth({
     credentials,
