@@ -1,0 +1,19 @@
+{
+  "name": "telegram-google-sheet-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+      "start": "run auto"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "@haudv3202",
+  "license": "ISC",
+  "description": "Sản phẩm này là một bot Telegram giúp ghi dữ liệu vào Google Sheets.Phát triển bởi @dangvanhau",
+  "dependencies": {
+    "axios": "^1.10.0",
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "googleapis": "^152.0.0"
+  }
+}

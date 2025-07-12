@@ -1,0 +1,19 @@
+
+# Node modules
+node_modules/
+
+# Credential files
+credentials.json
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.local
+
+# OS generated
+.DS_Store
+Thumbs.db
