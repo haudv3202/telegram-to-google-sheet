@@ -4,6 +4,7 @@ import { google } from 'googleapis';
 import { GoogleAuth } from 'google-auth-library';
 import { readFile } from 'fs/promises';
 import axios from 'axios'; // ⚠️ THÊM DÒNG NÀY Ở ĐẦU FILE nếu chưa có
+import { readFile } from 'fs/promises';
 
 const TELEGRAM_TOKEN = '7999263039:AAFMNdCK2Z4d4Yba_j0HecD_IGNNN44n8fs'; // ⚠️ THAY bằng token thật
 const TELEGRAM_API = `https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`;
@@ -18,8 +19,8 @@ const PORT = 3000;
 async function main() {
   // const raw = await readFile('credentials.json', 'utf-8');
   // const credentials = JSON.parse(raw);
-
-  const credentials = JSON.parse(process.env.GOOGLE_CREDENTIALS);
+  const raw = await readFile('/etc/secrets/credentials.json', 'utf-8');
+  const credentials = JSON.parse(raw);
 
 
   const auth = new GoogleAuth({
