@@ -2,7 +2,6 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import { google } from 'googleapis';
 import { GoogleAuth } from 'google-auth-library';
-import { readFile } from 'fs/promises';
 import axios from 'axios'; // ⚠️ THÊM DÒNG NÀY Ở ĐẦU FILE nếu chưa có
 import { readFile } from 'fs/promises';
 
