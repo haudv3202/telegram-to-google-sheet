@@ -3,7 +3,7 @@
 node_modules/
 
 # Credential files
-credentials.json
+
 
 # Logs
 npm-debug.log*
